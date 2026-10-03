@@ -1,0 +1,15 @@
+[Unit]
+Description=DoAide Draw - Free Online Whiteboard
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/DoAide-Draw
+ExecStart=/usr/bin/npx serve dist -l tcp://172.18.0.1:3060 -s
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
