@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://draw.doaide.com/sitemap.xml
